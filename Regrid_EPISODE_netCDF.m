@@ -36,10 +36,7 @@ if ~exist(nc_file,'file')
     fprintf('%s\n',nc_file)
     error('make_maptry:Input','nc_file not found.')
 end
-% nc_file=strcat(pname,'Recep_AQstat_EPI9stan_EMIv1-ALLcorrected_NO2_NEDREGLOMMA_2016.nc');
-% sim_year=2016;
-% Input_component='NO2';
-
+%--------------------------------------------------------------------------
 
 fprintf('*** Reading NETcdf file:  %s \n  ...',nc_file)
 ifo                   = ncinfo(nc_file);
